@@ -13,5 +13,5 @@ var PropsDisplayer = React.createClass({
     );
   }
 });
-ReactDOM.render (<PropsDisplayer />, document.getElementById('app')
+ReactDOM.render (<PropsDisplayer text="wow" />, document.getElementById('app')
 );
