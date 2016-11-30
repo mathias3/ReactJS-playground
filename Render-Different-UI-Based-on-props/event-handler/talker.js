@@ -11,7 +11,7 @@ var Talker = React.createClass({
   },
   
   render: function () {
-    return <Button />;
+    return <Button talk={this.talk} />;
   }
 });
 
