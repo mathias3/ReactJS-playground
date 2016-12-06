@@ -1,0 +1,23 @@
+ar React = require('react');
+
+
+var green = '#39D1B4';
+var yellow = '#FFD712';
+
+var Toggle = React.createClass({
+  getInitialState: function () {
+    return {
+      color: green    
+    };
+  },
+  render: function () {
+    return (
+      <div>
+        <h1>
+          Change my color
+        </h1>
+        style={{background: this.state.color}}
+      </div>
+    );
+  }
+});
