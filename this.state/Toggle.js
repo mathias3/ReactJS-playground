@@ -10,6 +10,10 @@ var Toggle = React.createClass({
       color: green    
     };
   },
+  changeColor: function(){
+    var color = this.state.color == yellow ? green : yellow;
+    this.setState({color:color});
+  },
   render: function () {
     return (
       <div style={{background: this.state.color}} >
