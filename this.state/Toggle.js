@@ -20,7 +20,7 @@ var Toggle = React.createClass({
         <h1>
          
         </h1>
-        <button>
+        <button onClick={this.changeColor}>
            Change color
         </button>
       </div>
