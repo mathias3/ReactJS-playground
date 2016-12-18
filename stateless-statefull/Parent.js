@@ -8,7 +8,8 @@ var Parent = React.createClass({
   },
   
   render: function () {
-    return <Child name = {this.state.name}/> ;
+    return <Child 
+    		name={this.state.name} onChange={this.changeName} /> ;
   }
 });
 ReactDOM.render(<Parent />, document.getElementById('app'));
