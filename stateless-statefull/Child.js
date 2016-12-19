@@ -11,7 +11,7 @@ var Child = React.createClass({
         <h1>
           Hey my name is {this.props.name}!
         </h1>
-        <select id="great-names" onChange={this.props.onChange}>
+        <select id="great-names" onChange={this.handleChange}>
           <option value="Frarthur">
             Frarthur
           </option>
