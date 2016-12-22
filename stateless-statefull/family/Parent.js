@@ -17,8 +17,7 @@ var Parent = React.createClass({
   render: function () {
     return (
       <div>
-        <Child 
-          onChange={this.changeName} />
+        <Child onChange={this.changeName} />
         <Sibling name={this.state.name} />
       </div>
     );
