@@ -40,7 +40,8 @@ var GuineaPigsContainer = React.createClass({
   }
 });
 
-ReactDOM.render(
+ReactDOM.render
+(
   <GuineaPigsContainer />, 
   document.getElementById('app')
 );
