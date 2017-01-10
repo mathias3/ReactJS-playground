@@ -29,15 +29,10 @@ var GuineaPigsContainer = React.createClass({
     clearInterval(this.interval);
   },
 
-  render: function () {
-    var src = GUINEAPATHS[this.state.currentGP];
-    return (
-      <div>
-        <h1>Cute Guinea Pigs</h1>
-        <img src={src} />
-      </div>
-    );
-  }
+ render: function () {
+  var src = GUINEAPATHS[this.state.currentGP];
+  return <GuineaPigs />;
+}
 });
 
 ReactDOM.render
