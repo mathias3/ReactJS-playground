@@ -31,7 +31,7 @@ var GuineaPigsContainer = React.createClass({
 
  render: function () {
   var src = GUINEAPATHS[this.state.currentGP];
-  return <GuineaPigs />;
+  return <GuineaPigs src={src} />;
 }
 });
 
