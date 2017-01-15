@@ -1,6 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var GuineaPigs = require('../components/GuineaPigs');
+
 var GUINEAPATHS = [
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-1.jpg',
   'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-guineapig-2.jpg',
@@ -29,14 +30,13 @@ var GuineaPigsContainer = React.createClass({
     clearInterval(this.interval);
   },
 
- render: function () {
-  var src = GUINEAPATHS[this.state.currentGP];
-  return <GuineaPigs src={src} />;
-}
+  render: function () {
+    var src = GUINEAPATHS[this.state.currentGP];
+    return <GuineaPigs src={src} />;
+  }
 });
 
-ReactDOM.render
-(
+ReactDOM.render(
   <GuineaPigsContainer />, 
   document.getElementById('app')
 );
