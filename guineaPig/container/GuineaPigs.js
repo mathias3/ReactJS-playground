@@ -11,4 +11,5 @@ var GuineaPigs = React.createClass({
     );
   }
 });
+
 module.exports = GuineaPigs;
